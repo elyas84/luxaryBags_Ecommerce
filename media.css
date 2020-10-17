@@ -1,0 +1,101 @@
+
+@media screen and (max-width: 1025px) {
+ 
+
+    footer {
+        height: 120%;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+ .bags_and_watches {
+     display: flex;
+     flex-direction: column;
+     padding: 0;
+ }
+.gallery_grid {
+    padding: 0;
+}
+
+.instagram_icon {
+    padding: 0;
+    margin: 0;
+}
+    .parent {
+       display: flex;
+       flex-direction:column;
+       margin: 0;
+       padding: 0;
+    }
+.express_your-self {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.subscribe {
+    font-size: 50%;
+}
+   footer {
+        height: 100%;
+    }
+  
+
+    .footer_wraper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+ .bags_and_watches {
+     display: flex;
+     flex-direction: column;
+     padding: 0;
+ }
+.gallery_grid {
+    padding: 0;
+}
+
+.instagram_icon {
+    padding: 0;
+    margin: 0;
+}
+    .parent {
+       display: flex;
+       flex-direction:column;
+       margin: 0;
+       padding: 0;
+    }
+.express_your-self {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+    footer {
+        height: 100%;
+    }
+  
+
+    .footer_wraper {
+        display: flex;
+        flex-direction: column;
+    }
+}
