@@ -51,7 +51,7 @@ nav {
     top: 0; 
     background-color:#f1d4d4;
     transition-timing-function: ease-in-out;
-    transition: .5s;
+    transition: .6s;
     z-index: 1;
 }
 
@@ -73,7 +73,7 @@ nav ul li:hover {
     background-color:#e0c2ce;
 }
 nav ul li a {
-   font-size: 2em;
+   font-size: 1.5em;
    text-transform: uppercase;
    color: white;
 }
@@ -82,10 +82,11 @@ nav ul li a {
 
 .bags_and_watches {
 display: grid;
-grid-template-columns: 1.5fr .5fr;
-grid-template-rows: repeat(4, 1fr);
-grid-gap: 2em 0;
-padding: 3em;
+grid-template-columns: 1.5fr 1fr;
+grid-template-rows: repeat(4, .8fr);
+grid-gap: 0;
+padding: 0 3em;
+
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -97,20 +98,23 @@ padding: 3em;
 .div7 { grid-area: 4 / 1 / 5 / 2; }
 .div8 { grid-area: 4 / 2 / 5 / 3; }
 
-.div1, .div3, .div5 {
+.div1, .div3, .div5, .div7 {
     width: 100%;
-    height: 100vh;
-
-
+    height: 80%;
 }
+
+.div2, .div4, .div6, .div8 {
+    text-transform: uppercase;
+}
+
 .div3 {
-    background-color:#f1d4d4 ;
+    background-color:#ffe0f7 ;
 }
 .div5 {
     background-color: #a3d8f4;
 }
 .div7 {
-    background-color: #b9fffc;
+    background-color: #d4b8cd;
 }
 .div2, .div4, .div6, .div8 {
     width: 100%;
@@ -150,12 +154,13 @@ padding: 3em;
     justify-content: center;
     position: relative;
     left: 20%;
+    grid-gap:.5em;
 
 }
 
 .three_bags {
     width: 100%;
-    height: 50vh;
+    height: 30vh;
 }
 .three_bags img {
     width: 100%;
@@ -176,6 +181,7 @@ padding: 3em;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: repeat(2, 1fr);
+
 }
 
 .div9 { grid-area: 1 / 1 / 2 / 2; }
@@ -201,7 +207,7 @@ grid-template-rows: repeat(2, 1fr);
     grid-template-rows: .2fr 1fr;
     width: 100%;
     height: 100%;
-    padding: 5em;
+    padding:  0 10em;
 }
 .instagram_icon {
     text-align: center;
@@ -216,9 +222,9 @@ span {
 }
 
 .express_your-self {
-    background-color: rgb(224, 224, 224);
+    background-color: #f7dad9;
     height: 100vh;
-    color: grey;
+    color: #fca5a2;
 
 }
 .express_container h2 {
@@ -243,31 +249,46 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #f6f5f5;
+    background-color: #e8ffff;
+    text-transform: uppercase;
 }
 .subscribe h1 {
     font-size: 7em;
     color: grey;
     opacity: .5;
 }
-
 .inputs {
-    width: 50%;
-    text-align: center;
-    padding: 2em;
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 2em;
+   
 }
+.email_box {
+    width: 30%;
+    margin-bottom: 1em;
 
+}
+.submit_box {
+    width: 30%;
+}
 input[type="email"] {
-    width: 50%;
+    width: 100%;
     padding: 1em;
     
 }
 input[type="submit"] {
-    width: 20%;
+    width: 100%;
     padding: 1em;
     background-color: black;
     color: white;
     text-transform: uppercase;
+}
+input[type = "submit"]:hover {
+    background-color: rgb(46, 46, 46);
+    color: white;
 }
 
 footer {

@@ -23,6 +23,9 @@
     padding: 0;
 }
 
+.img_container {
+    left: 0%;
+}
 .instagram_icon {
     padding: 0;
     margin: 0;
@@ -45,6 +48,16 @@
 }
 .subscribe {
     font-size: 50%;
+}
+.email_box {
+    width: 100%;
+    margin-bottom: 1em;
+
+}
+.submit_box {
+    width: 100%;
+    margin-bottom: 1em;
+
 }
    footer {
         height: 100%;
