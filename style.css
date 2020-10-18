@@ -7,26 +7,36 @@
     letter-spacing: 2px;
     line-height: 1.5;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Michroma', sans-serif;
+ 
 }
 
 header{
     display: flex;
     justify-content: space-between;
     padding: 3em;
+    background-image: linear-gradient(rgba(148, 110, 147, 0.568),rgba(139, 103, 138, 0.808)),url("images/backgound.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+ 
 }
 
 #logo {
     text-transform: uppercase;
     font-size: 2em;
+    color: white;
 }
 /** open and close **/
 
 .open .fa-bars {
     font-size: 3em;
     cursor: pointer;
+    color: white;
 }
 
 .open .fa-bars:hover {
@@ -41,17 +51,14 @@ header{
     cursor: pointer;
     color: white;
 }
-.close .fa-times:hover {
-    animation: rotateInDownLeft;
-    animation-duration: 1s;
-}
+
 nav {
     width: 100%;
     height: 100%;
     position: fixed;
     right: -100%;
     top: 0; 
-    background-color:#f1d4d4;
+    background-color:#e0b5b5;
     transition-timing-function: ease-in-out;
     transition: .6s;
     z-index: 1;
@@ -85,10 +92,10 @@ nav ul li a {
 
 .bags_and_watches {
 display: grid;
-grid-template-columns: 1.5fr 1fr;
+grid-template-columns: 1fr .5fr;
 grid-template-rows: repeat(4, .8fr);
-grid-gap: 0;
-padding: 0 3em;
+padding: 1.5em;
+
 
 }
 
@@ -156,8 +163,8 @@ padding: 0 3em;
     align-items: center;
     justify-content: center;
     position: relative;
-    left: 20%;
-    grid-gap:.5em;
+    left: 5%;
+    /* grid-gap:.5em; */
 
 }
 
@@ -168,6 +175,7 @@ padding: 0 3em;
 .three_bags img {
     width: 100%;
     height: 100%;
+    opacity: .7;
 }
 
 
@@ -198,7 +206,7 @@ grid-template-rows: repeat(2, 1fr);
 
 .parent div {
     width: 100%;
-    height: 100%;
+    height: 40vh;
 }
 .parent div img {
     width: 100%;
@@ -207,14 +215,14 @@ grid-template-rows: repeat(2, 1fr);
 .gallery_grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .2fr 1fr;
-    width: 50%;
-    height: 100%;
+    grid-template-rows: .1fr 1fr;
+    width: 80%;
     margin: 0 auto;
    
 }
 .instagram_icon {
     text-align: center;
+    color: #833AB4;
 }
 .fa-instagram {
     font-size: 2em;
@@ -229,21 +237,25 @@ span {
     background-color: #f7dad9;
     height: 100vh;
     color: #fca5a2;
-
 }
 .express_container h2 {
     text-align: center;
     padding-top: 5em;
     text-transform: uppercase;
+    color: rgb(153, 113, 113);
+    margin-bottom: 5em;
+    font-weight: bolder;
 
 }
 .column {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    height: 100%;
+    color: rgb(153, 113, 113);
 }
 .column .fas {
-    font-size: 5em;
+    font-size: 2em;
     margin: 1em;
 }
 
@@ -296,12 +308,13 @@ input[type = "submit"]:hover {
 }
 
 footer {
-    background-color: rgb(224, 224, 224);
-    height: 70vh;
+    background-color: #f7dad9;
+    height: 60vh;
+    color: rgb(155, 130, 130);
 }
 .copyRight {
     text-align: center;
-    margin-top: 5em;
+    margin-top: 3em;
 }
 footer h2 {
     text-transform: uppercase;
@@ -326,9 +339,22 @@ footer h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .finalBrand {
     opacity: .5;
 }
+
+.homeBtn {
+    position: absolute;
+    right: 10px;
+    font-size: 3em;
+
+}
+.homeBtn a {
+   
+    color:#fca5a2 ;
+}
+.fa-arrow-alt-circle-up:hover {
+    color: white;
+} 
