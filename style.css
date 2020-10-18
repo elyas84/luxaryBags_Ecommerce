@@ -345,15 +345,15 @@ footer h2 {
     opacity: .5;
 }
 
-.homeBtn {
-    position: absolute;
-    right: 10px;
-    font-size: 3em;
+.bottomPart {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
 
 }
 .homeBtn a {
-   
-    color:#fca5a2 ;
+    font-size: 2em;
+    color: rgb(155, 130, 130);
 }
 .fa-arrow-alt-circle-up:hover {
     color: white;
