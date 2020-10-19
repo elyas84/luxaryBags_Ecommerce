@@ -351,10 +351,12 @@ footer h2 {
     padding: 1.5em;
 
 }
+
 .homeBtn a {
-    font-size: 2em;
+    font-size: 4em;
     color: rgb(155, 130, 130);
 }
 .fa-arrow-alt-circle-up:hover {
     color: white;
+    
 } 
