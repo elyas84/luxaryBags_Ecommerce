@@ -19,7 +19,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 3em;
-    background-image: linear-gradient(rgba(148, 110, 147, 0.568),rgba(139, 103, 138, 0.808)),url("images/backgound.jpg");
+    background-image:linear-gradient(rgba(163, 65, 157, 0.87),rgba(136, 57, 131, 0.589)),url("images/background.jpeg") ;
     background-position: center;
     background-size: cover;
     height: 70vh;
@@ -59,7 +59,6 @@ nav {
     right: -100%;
     top: 0; 
     background-color:#e0b5b5;
-    transition-timing-function: ease-in-out;
     transition: .6s;
     z-index: 1;
 }
@@ -76,7 +75,7 @@ nav ul li {
     text-align: center;
     padding: 1em;
     margin-bottom: 3em;
-
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 nav ul li:hover {
